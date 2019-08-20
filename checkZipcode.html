@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check zipcode</title>
+</head>
+<body>
+<script>
+    function is_usZipcode(str) {
+        regexp= /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if(regexp.test(str)){
+            return true;
+        }
+        return false;
+    }
+    let zipcode = "03201 - 2150";
+    console.log(zipcode);
+</script>
+</body>
+</html>
